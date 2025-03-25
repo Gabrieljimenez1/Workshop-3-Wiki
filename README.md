@@ -60,4 +60,9 @@ Después de terminar este proceso, se presento un problema, y es que se necesita
 ![Imagen 7](Images/Imagen7.png)
 
 ## Implementación Fisica
- 
+
+ # Referencias
+(1) [OpenPLC Overview - Autonomy Logic](https://autonomylogic.com/docs/openplc-overview/)
+
+(2) [Physical Addressing in OpenPLC - Autonomy Logic](https://autonomylogic.com/docs/2-4-physical-addressing/)
+
