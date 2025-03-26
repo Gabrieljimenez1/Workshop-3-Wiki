@@ -52,14 +52,14 @@ Y 5 variables de salida:
 
 Como ya se identificó las variables a crear y la lógica de la simulación de manera anterior, la simulación constará con la arquitectura que se mostrará a continuación, esta simulación seguirá la misma lógica que presentada anteriormente.
 
- ![Imagen 5](Images/Imagen5.png)
+![Imagen 5](Images/Imagen5.png)
 
 Después de tener esta arquitectura en la simulación, se realizó una simulación para comprobar su funcionamiento (prueba incluida en el video de WorkShop)
 Después de tener en claro que la simulación funcionaba en el programa, se procedió a buscar documentacion en la misma pagina del desarrollador del programa (1) para poder quemar en nuestro caso, el Arduino Uno con el cual desarrollamos la implementación física.
 Luego de hacer la búsqueda de documentacion, y gracias a lo encontrado se conoció que para poder quemar el programa a el Arduino se necesita identificar la ubicación física del pin donde se relacionara, es decir, si quiero que la entrada “Bajo” entre por un pin especifico se tiene que darle cierto código, como es mostrado en la siguiente imagen, estos códigos se encontraron en el enlace de la página del programa (2).
 
-![Imagen 6](Images/Imagen6.png)
- 
+
+ ![Imagen 6](Images/Imagen6.png)
 
 Después de terminar este proceso, se presento un problema, y es que se necesitan 5 salidas, y por default el programa solo tiene 4 pines de salida, por lo cual al momento de transferir el programa se tuvo que cambiar la configuración de pines de salidas análogas, a que fuera una salida digital, de modo que los pines utilizados quedo de la siguiente manera:
 
