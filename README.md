@@ -86,7 +86,7 @@ Y como se puede apreciar, y se lograra de mejor manera en nuestro video explicat
 
 Se muestra a continuación el montaje aplicado:
 
-![Imagen 10](Images/Imagen10.png)
+![Imagen 10](Images/Imagen10.jpg)
 
 # Referencias
 (1) [OpenPLC Overview - Autonomy Logic](https://autonomylogic.com/docs/openplc-overview/)
