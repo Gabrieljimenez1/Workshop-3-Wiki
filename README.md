@@ -67,7 +67,28 @@ Después de terminar este proceso, se presento un problema, y es que se necesita
 
 ## Implementación Fisica
 
- # Referencias
+ Luego de programar el Arduino Uno, según el esquemático que se hablo en el punto anterior, se procedió a realizar el montaje en físico, donde se utilizaron las siguientes entradas:
+
+-	Start: Es el botón de encendido del sistema, ubicado en el pin 2 del Arduino, y este recibe voltaje de un dip switch, que actúa como el botón de encendido.
+-	Stop: Es el siguiente pin del dip switch mencionado en el punto anterior, este se encuentra ubicado en el pin 3 del Arduino y actúa como el botón de siempre apagado del sistema.
+
+Ahora, existen también 3 variables de entrada, ubicadas del pin 4 al 6 respectivamente, estas hacen la representación de los valores de agua en el tanque, siendo el pin 4 lo que representa que hay una cantidad baja en el tanque, siendo el pin 5 la representación de cuando el nivel del agua esta es medio y finalmente, el pin 6 cuando el nivel del agua es alto dentro de tanque. Los estados posibles de estas variables son verdadero o falso, es decir si tiene voltaje o no, esta capacidad se genera usando otro dip switch.
+
+Las salidas se manejan desde el pin 7 al 9, y los pines 12 y 13, estas salidas corresponden a lo mencionado anteriormente, pero dicho igual nuevamente, los estados que se muestran atreves de luces leds que corresponden a:
+
+-	Vacío
+-	Nivel bajo de agua
+-	Nivel medio de agua
+-	Nivel alto de agua
+-	Error
+
+Y como se puede apreciar, y se lograra de mejor manera en nuestro video explicativo, según las entradas que dejemos entrar al dip switch, se encenderán los niveles que presente el tanque, o si es el caso, el led de error.
+
+Se muestra a continuación el montaje aplicado:
+
+![Imagen 10](Images/Imagen10.png)
+
+# Referencias
 (1) [OpenPLC Overview - Autonomy Logic](https://autonomylogic.com/docs/openplc-overview/)
 
 (2) [Physical Addressing in OpenPLC - Autonomy Logic](https://autonomylogic.com/docs/2-4-physical-addressing/)
