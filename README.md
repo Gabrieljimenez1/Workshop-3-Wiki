@@ -32,7 +32,13 @@ Ahí, después de presionado el botón de “mas” verde, se podrá observar qu
 -	Clase
 -	Tipo
   
-De aquí es importante saber que se deberá poner el nombre con el que esperemos que se identifiquen durante todo el desarrollo, también el tipo, que por ser de tipo lógica Ladder, y como esperamos usarla en la implementación física con entradas y negaciones de voltaje, se declarara tipo Bool, en donde podria ser un valor de 1 o 0 por ejemplo. Para este WorkShop declaramos 3 variables de entrada:
+De aquí es importante saber que se deberá poner el nombre con el que esperemos que se identifiquen durante todo el desarrollo, también el tipo, que por ser de tipo lógica Ladder, y como esperamos usarla en la implementación física con entradas y negaciones de voltaje, se declarara tipo Bool, en donde podria ser un valor de 1 o 0 por ejemplo. Para este WorkShop declaramos 2 variables de entrada:
+
+- Start
+- Stop
+
+Estas variables permiten que el sistema funcione al estar encendido o apagado. Luego de eso, se usa internamente una variable R1, la cual no se utiliza en el Arduino como una variable, pero si para darle funcionalidad al sistema. Ademas de eso se utilizaron las siguientes variables de entrada:
+
 - Baja
 - Media
 - Alta
