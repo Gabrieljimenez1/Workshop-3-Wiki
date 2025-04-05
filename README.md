@@ -2,6 +2,28 @@
 
 # 1. Desing HMI in CODESYS
 
+## Tabla de estados
+
+Para el diseño del HMI en CODESYS, en primera instancia se desarrolló la lógica en lenguaje Ladder del sistema del tanque de almacenamiento. Como base para esto, se diseñó una tabla de estados que definía cómo se representaría la simulación y cómo estarían distribuidos los distintos estados del sistema:
+
+![Imagen 11](Imagenes/TablaEstados.png)
+
+## Lógica de estados
+
+Teniendo en cuenta que, según la tabla, ciertos estados debían representarse de manera directa —por ejemplo, que al activar la palanca de bajo se encendiera el LED correspondiente—, gran parte de la simulación siguió ese enfoque. No obstante, para poder indicar los estados de error, fue necesario implementar una lógica diferente:
+
+![Imagen 12](Imagenes/Estados.png)
+
+![Imagen 13](Imagenes/EstadoAparte.png)
+
+## HMI
+
+Finalmente, teniendo en cuenta el funcionamiento de la lógica implementada, se procedió al desarrollo del HMI, en el cual se utilizaron variables que permitieran representar visualmente la lógica diseñada. El sistema se basó en una lógica de tres estados —"bajo", "medio" y "alto"— en relación con la capacidad de almacenamiento del tanque. Para que se alcanzara el estado de "alto", era necesario haber pasado y mantenido previamente los estados de "bajo" y "medio". Adicionalmente, se incorporaron dos botones con las funciones de encender y apagar el sistema, lo que permitió realizar la simulación de manera completa y efectiva:
+
+![Imagen 14](Imagenes/HMI.png)
+
+![Imagen 15](Imagenes/Variable.png)
+
 # 2. Validate in OPENPLC
 
 ## OPENPLC
