@@ -6,7 +6,7 @@
 
 Para el diseño del HMI en CODESYS, en primera instancia se desarrolló la lógica en lenguaje Ladder del sistema del tanque de almacenamiento. Como base para esto, se diseñó una tabla de estados que definía cómo se representaría la simulación y cómo estarían distribuidos los distintos estados del sistema:
 
-![Imagen 11](Imags/TablaEstados.png)
+![Imagen 11](Images/TablaEstados.png)
 
 ## Lógica de estados
 
